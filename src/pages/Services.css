@@ -1,0 +1,297 @@
+/* ===============================
+   SERVICES DETAIL SECTION
+================================ */
+.services-detailed {
+  padding: 90px 6%;
+  background: #ffffff;
+}
+
+.services-detailed h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #0f172a;
+}
+
+.services-intro {
+  max-width: 850px;
+  margin: 12px auto 60px;
+  text-align: center;
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.7;
+}
+
+/* GRID */
+.services-detailed-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* CARD */
+.service-detail-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 32px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.service-detail-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.14);
+}
+
+/* ICON */
+.service-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #2563eb, #14b8a6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+/* TEXT */
+.service-detail-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.service-detail-card p {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.service-detail-card ul {
+  padding-left: 18px;
+  margin-bottom: 18px;
+}
+
+.service-detail-card ul li {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+/* BUTTON */
+.service-detail-card button {
+  background: linear-gradient(135deg, #2563eb, #14b8a6);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===============================
+   MISSION & VALUES
+================================ */
+.mission-values {
+  padding: 90px 6%;
+  background: #f8fafc;
+}
+
+.mission-header {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.mission-header h2 {
+  font-size: 34px;
+  color: #0f172a;
+}
+
+.mission-header p {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #475569;
+}
+
+/* GRID */
+.mission-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+/* CARD */
+.mission-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* ICON */
+.mission-icon {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 16px;
+  background: #e0ecff;
+  color: #2563eb;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.mission-card h3 {
+  font-size: 18px;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.mission-card p {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* ===============================
+   CTA SECTION
+================================ */
+.services-cta {
+  padding: 90px 6%;
+  background: linear-gradient(135deg, #2563eb, #14b8a6);
+  text-align: center;
+  color: #ffffff;
+}
+
+.services-cta h2 {
+  font-size: 34px;
+}
+
+.services-cta p {
+  margin: 10px 0 30px;
+  font-size: 16px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.cta-primary {
+  background: #ffffff;
+  color: #2563eb;
+  padding: 12px 26px;
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cta-secondary {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+.footer {
+  background: #0f172a;
+  color: #cbd5f5;
+  padding: 70px 6% 30px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.footer-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #14b8a6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.footer h3 {
+  color: #ffffff;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+.footer-links a {
+  display: block;
+  color: #cbd5f5;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 1024px) {
+  .services-detailed-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mission-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .services-detailed,
+  .mission-values,
+  .services-cta {
+    padding: 60px 20px;
+  }
+
+  .services-detailed h1 {
+    font-size: 32px;
+  }
+
+  .services-detailed-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-cta h2 {
+    font-size: 28px;
+  }
+}

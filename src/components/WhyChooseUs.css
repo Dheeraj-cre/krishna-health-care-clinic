@@ -1,0 +1,120 @@
+/* ================= WHY CHOOSE US ================= */
+
+.why-choose {
+  padding: 80px 20px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+/* Title */
+.why-choose h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.why-subtitle {
+  max-width: 620px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Grid */
+.why-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Card */
+.why-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 36px 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon */
+.why-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0ea5e9, #10b981);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 28px;
+}
+
+/* Title */
+.why-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.why-card p {
+  font-size: 14.5px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-choose h2 {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .why-choose {
+    padding: 60px 16px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .why-choose h2 {
+    font-size: 28px;
+  }
+
+  .why-subtitle {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .why-card {
+    padding: 30px 20px;
+  }
+
+  .why-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+  }
+}

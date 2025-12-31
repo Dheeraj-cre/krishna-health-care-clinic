@@ -1,0 +1,208 @@
+/* ===============================
+   NAVBAR BASE
+================================ */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 40px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* ===============================
+   LEFT
+================================ */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.logo-circle {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, #2563eb, #14b8a6);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clinic-text h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.clinic-text p {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* ===============================
+   LINKS (DESKTOP)
+================================ */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links li {
+  font-size: 15px;
+  font-weight: 500;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  color: #14b8a6;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+.appointment-btn {
+  background: linear-gradient(135deg, #2563eb, #14b8a6);
+  color: #ffffff;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===============================
+   HAMBURGER
+================================ */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 3px;
+  background: #0f172a;
+  border-radius: 3px;
+}
+
+/* ===============================
+   MOBILE
+================================ */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 72px;
+    right: 20px;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+
+    background: #ffffff;
+    padding: 20px;
+    width: 220px;
+
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .appointment-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* ===============================
+   MENU TOGGLE BUTTON
+================================ */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #0f172a;
+}
+
+/* ===============================
+   MOBILE VIEW
+================================ */
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 72px;
+    right: 20px;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+
+    background: #ffffff;
+    padding: 20px;
+    width: 220px;
+
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .appointment-btn {
+    width: 100%;
+  }
+}
+
