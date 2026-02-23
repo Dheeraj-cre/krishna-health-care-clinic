@@ -1,6 +1,5 @@
 /* ============================================================
-   Hero.css — Krishna Health Care · LARGE IMAGE VERSION
-   Right image fills full column height — no max-width cap
+   Hero.css — Krishna Health Care · RESPONSIVE FIXED
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
@@ -24,9 +23,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   overflow: hidden;
   width: 100%;
   display: grid;
-  grid-template-columns: 45% 55%;   /* image gets 55% width */
+  grid-template-columns: 1fr 1fr;   /* equal columns, more balanced */
   align-items: stretch;
-  min-height: 560px;
+  min-height: 600px;
   background:
     radial-gradient(ellipse 65% 130% at 0% 55%, rgba(26,86,219,0.65) 0%, transparent 58%),
     radial-gradient(ellipse 50% 80% at 100% 100%, rgba(15,45,190,0.50) 0%, transparent 55%),
@@ -55,8 +54,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 28px;
-  padding: 52px 28px 52px 72px;
+  gap: 22px;
+  padding: 52px 24px 52px 60px;
   animation: fadeL 0.75s ease both;
 }
 
@@ -64,11 +63,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: flex;
   flex-direction: column;
   gap: 4px;
-  font-size: clamp(1.85rem, 2.8vw, 3rem);
+  font-size: clamp(1.6rem, 2.2vw, 2.8rem);
   font-weight: 800;
-  line-height: 1.11;
+  line-height: 1.13;
   color: var(--white);
-  letter-spacing: -0.028em;
+  letter-spacing: -0.025em;
 }
 .h1 span { display: block; }
 
@@ -80,20 +79,22 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: inline-flex;
   align-items: center;
   width: fit-content;
+  max-width: 100%;
   border: 2.5px solid var(--pink);
   border-radius: 100px;
-  padding: 12px 12px 12px 26px;
+  padding: 10px 10px 10px 22px;
   background: transparent;
   color: var(--white);
   font-family: 'Poppins', sans-serif;
-  font-size: 14.5px;
+  font-size: 14px;
   font-weight: 600;
   transition: background .22s, box-shadow .22s, transform .18s;
   letter-spacing: .01em;
+  flex-shrink: 0;
 }
-.cta-text  { margin-right: 16px; white-space: nowrap; }
+.cta-text  { margin-right: 14px; white-space: nowrap; }
 .cta-icon  {
-  width: 38px; height: 38px; border-radius: 50%;
+  width: 36px; height: 36px; border-radius: 50%;
   background: var(--pink);
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0; transition: transform .22s, background .22s;
@@ -107,12 +108,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background: var(--card-bg);
   border: 1px solid var(--card-b);
   border-radius: 16px;
-  padding: 20px 22px;
+  padding: 18px 20px;
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   box-shadow: 0 4px 30px rgba(0,0,0,.30);
 }
-.glass-desc p { font-size: 13.5px; font-weight: 400; line-height: 1.72; color: var(--w90); }
+.glass-desc p { font-size: 13px; font-weight: 400; line-height: 1.72; color: var(--w90); }
 
 /* Dots */
 .dot-row { display: flex; align-items: center; gap: 10px; }
@@ -135,23 +136,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   animation: fadeR 0.75s 0.1s ease both;
 }
 
-/* Image container fills full right-column height
-   Left side curved, right side flush to edge     */
 .img-box {
   position: relative;
   width: 100%;
-  border-radius: 64px 0 0 64px;   /* only left corners rounded */
+  border-radius: 64px 0 0 64px;
   overflow: hidden;
   box-shadow: -20px 20px 80px rgba(0,0,0,.50), 0 0 0 1px rgba(255,255,255,.10);
 }
 
-/* Image fills 100% height — height set by parent stretch */
 .hero-img {
   width: 100%;
   height: 100%;
   min-height: 512px;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 20%;  /* shift up slightly so face/subject is visible */
   display: block;
   transition: opacity .45s ease, transform .45s ease;
 }
@@ -184,32 +182,88 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 @keyframes txIn   { from { opacity:0; transform:translateY(14px);  } to { opacity:1; transform:translateY(0); } }
 @keyframes txOut  { from { opacity:1; transform:translateY(0);     } to { opacity:0; transform:translateY(-12px); } }
 
-/* TABLET */
-@media (max-width:1024px) {
-  .hero { grid-template-columns:1fr; min-height:auto; }
-  .hero-right { order:-1; padding:0; }
-  .img-box    { border-radius:0 0 56px 56px; }
-  .hero-img   { min-height:360px; height:360px; }
-  .hero-left  { padding:36px 32px 44px; }
-  .h1         { font-size:clamp(1.8rem,5vw,2.7rem); }
+/* ── LARGE DESKTOP (1280px+) ── */
+@media (min-width: 1280px) {
+  .hero-left { padding: 60px 32px 60px 80px; gap: 26px; }
+  .h1 { font-size: clamp(2.4rem, 2.6vw, 3.2rem); }
 }
 
-/* MOBILE */
-@media (max-width:640px) {
-  .hero-img   { min-height:280px; height:280px; }
-  .img-box    { border-radius:0 0 44px 44px; }
-  .hero-left  { padding:28px 18px 36px; }
-  .h1         { font-size:clamp(1.5rem,6.5vw,2.1rem); }
-  .cta-btn    { font-size:13px; padding:10px 10px 10px 20px; }
-  .cta-icon   { width:32px; height:32px; }
-  .glass-desc p { font-size:12.5px; }
-  .nav-arr    { width:38px; height:38px; }
-  .nav-arrows { bottom:16px; right:16px; }
-  .bc-mid, .bc-br { display:none; }
+/* ── TABLET LANDSCAPE (1025px – 1279px) ── */
+@media (max-width: 1279px) and (min-width: 1025px) {
+  .hero { grid-template-columns: 48% 52%; min-height: 560px; }
+  .hero-left { padding: 44px 20px 44px 44px; gap: 20px; }
+  .h1 { font-size: clamp(1.7rem, 2.2vw, 2.4rem); }
+  .glass-desc p { font-size: 12.5px; }
 }
 
-@media (max-width:400px) {
-  .hero-img  { min-height:240px; height:240px; }
-  .h1        { font-size:1.4rem; }
-  .hero-left { padding:22px 14px 30px; }
+/* ── TABLET PORTRAIT (641px – 1024px) ── */
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .hero-right {
+    order: -1;
+    padding: 0;
+    height: 480px;
+  }
+  .img-box {
+    border-radius: 0 0 48px 48px;
+    height: 100%;
+  }
+  .hero-img {
+    min-height: unset;
+    height: 100%;
+  }
+  .hero-left {
+    padding: 36px 40px 48px;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
+  .glass-desc { max-width: 600px; }
+}
+
+/* ── MOBILE (max 640px) ── */
+@media (max-width: 640px) {
+  .hero-right { height: 420px; }
+  .img-box    { border-radius: 0 0 36px 36px; }
+
+  .hero-left {
+    padding: 24px 20px 36px;
+    gap: 16px;
+  }
+
+  .h1 { font-size: clamp(1.45rem, 6vw, 2rem); gap: 2px; }
+
+  .cta-btn    { font-size: 13px; padding: 9px 9px 9px 18px; }
+  .cta-text   { margin-right: 10px; }
+  .cta-icon   { width: 32px; height: 32px; }
+
+  .glass-desc { padding: 14px 16px; }
+  .glass-desc p { font-size: 12px; line-height: 1.65; }
+
+  .nav-arr    { width: 38px; height: 38px; }
+  .nav-arrows { bottom: 14px; right: 14px; gap: 8px; }
+
+  .bc-mid, .bc-br { display: none; }
+  .br-2, .br-3    { display: none; }
+}
+
+/* ── SMALL MOBILE (max 400px) ── */
+@media (max-width: 400px) {
+  .hero-right { height: 360px; }
+  .img-box    { border-radius: 0 0 28px 28px; }
+
+  .hero-left  { padding: 20px 16px 28px; gap: 14px; }
+  .h1         { font-size: clamp(1.25rem, 7vw, 1.6rem); }
+
+  .cta-btn    { font-size: 12px; padding: 8px 8px 8px 16px; }
+  .cta-icon   { width: 28px; height: 28px; }
+
+  .glass-desc { padding: 12px 14px; }
+  .glass-desc p { font-size: 11.5px; }
+
+  .dot-btn    { width: 8px; height: 8px; }
+  .dot-btn.dot-on { width: 26px; }
 }
