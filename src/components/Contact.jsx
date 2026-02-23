@@ -16,13 +16,12 @@ function Contact() {
           <h3>Krishna Health Care</h3>
 
           <p>
-            📍 Address: Krishna Healthcare And Therapy Center,
-            Varanasi, Uttar Pradesh, India
+            📍 Address: Near Natiniya Mai, Sector -B, Vishwanath Puri Colony, Lalpur, Uttar Pradesh 221002
           </p>
 
           <p>
             📞 Phone:{" "}
-            <a href="tel:+917985199359">+91 79851 99359</a>
+            <a href="tel:+918707589581">+91 8707589581</a>
           </p>
 
           <p>

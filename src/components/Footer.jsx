@@ -48,9 +48,10 @@ function Footer() {
         {/* CONTACT */}
         <div className="footer-contact">
           <h4>Contact Us</h4>
-          <p><FaPhoneAlt /> +91 123 456 7890</p>
+          <p><FaPhoneAlt /> +91 8707589581</p>
           <p><FaEnvelope /> info@krishnahealthcare.com</p>
-          <p><FaMapMarkerAlt /> 123 Medical Plaza, Healthcare District, City - 123456</p>
+          <p><FaMapMarkerAlt />Address: Near Natiniya Mai, Sector -B, Vishwanath Puri Colony, Lalpur, Uttar Pradesh 221002
+          </p>
         </div>
 
       </div>
