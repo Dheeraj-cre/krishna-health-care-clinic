@@ -30,6 +30,5 @@ Frontend Setup: - Navigate to healthcare folder - Run: npm install - Start: npm 
 run build
 Backend Setup: - Navigate to backend folder - Run: npm install - Create .env file 
 Security Notes
-- Do not push .env file to GitHub. - Keep API keys only on backend. - Never expose secret keys in
-frontend code.
+
 
