@@ -1,4 +1,4 @@
-## Krishna Health Care – AI Chatbot & WhatsApp
+## Krishna Health Care 
 Integration
 
 ## Project Overview
