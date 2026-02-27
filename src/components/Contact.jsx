@@ -25,7 +25,7 @@ function Contact() {
           </p>
 
           <p>
-            ✉️ Email:{" "}
+            Email:{" "}
             <a href="mailto:info@krishnahealthcare.com">
               info@krishnahealthcare.com
             </a>
