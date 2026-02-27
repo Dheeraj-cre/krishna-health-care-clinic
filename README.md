@@ -1,5 +1,5 @@
 ## Krishna Health Care 
-Integration
+
 
 ## Project Overview
 Krishna Health Care is a modern healthcare website built using React (Vite) for the frontend and
