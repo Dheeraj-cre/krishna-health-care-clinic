@@ -55,7 +55,7 @@ function AppointmentForm() {
 
       {submitted && (
         <p className="success-msg">
-          ✅ Appointment request submitted successfully!
+          Appointment request submitted successfully!
         </p>
       )}
 
