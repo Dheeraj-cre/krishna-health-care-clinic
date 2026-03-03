@@ -1,7 +1,4 @@
 ## Krishna Health Care 
-
-
-## Project Overview
 Krishna Health Care is a modern healthcare website built using React (Vite) for the frontend and
 Node.js with Express for the backend. The website includes an AI-powered chatbot that can answer
 patient queries related to clinic timings, orthopaedic treatments, location details, and appointment
