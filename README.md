@@ -10,7 +10,6 @@ information.
 • Embedded Google Maps location
 • Contact section with call and email support
 • AI chatbot for instant patient support
-• Secure environment variable handling
 • Ready for WhatsApp auto-response integration
 
 ## Technology Stack
